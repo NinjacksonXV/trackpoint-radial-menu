@@ -15,7 +15,7 @@ For now, the flow of data will look something like this. The compositor must fir
 flowchart TD;
 	tp[/Trackpoint Device/];
 	vd[/Virtual Device/];
-	if[/Userland-accessable<br>Interface\]
+	if[/Userland-accessible<br>Interface\]
 	app[Radial Menu];
 	mm[[Middleware]];
 	tp ==Events==> mm 
@@ -35,7 +35,7 @@ flowchart TD;
 	sc{Shortcut<br>State?}
 	vd[/Virtual Device/];
 	app[Radial Menu];
-	if{{Userland-accessable<br>Interface}}
+	if{{Userland-accessible<br>Interface}}
 	
 	mm -- Registers with --> gs
 	tp ==Events==> mm 
