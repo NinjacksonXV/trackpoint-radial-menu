@@ -15,7 +15,7 @@ For now, the flow of data will look something like this. The compositor must fir
 flowchart TD;
 	tp[/Trackpoint Device/];
 	vd[/Virtual Device/];
-	if[/Userland-accessable Interface\]
+	if[/Userland-accessable<br>Interface\]
 	app[Radial Menu];
 	mm[[Middleware]];
 	tp ==Events==> mm 
