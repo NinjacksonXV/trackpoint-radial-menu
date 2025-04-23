@@ -12,10 +12,14 @@
     {
       devShells.${system} = {
         default = pkgs.mkShell {
-          packages = with pkgs; [
+          buildInputs = with pkgs; [
+            gobject-introspection
+            pkg-config
+            gcc
+            libgcc
             vala
             libevdev
-            libinput # Here for tooling
+            libinput
             udev
           ];
         };
