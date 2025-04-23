@@ -1,10 +1,12 @@
 /*
  * libevdev testing -- creates a virtual mouse and moves it.
  * Pulled from https://kernel.org/doc/html/v4.12/input/uinput.html#mouse-movements
+ *
+ * Must be run with `sudo` (udev rules will be added later).
+ * Must be compiled with `gcc ./libevdev.c $(pkg-config --libs libevdev)` on NixOS; for some reason, gcc isn't finding it.
  * TODO:
  * - Look into libevdev_uinput.h as an alternative to uinput.h -- Are there convenience functions/wrappers that I can take advantage of?
 */
-
 #include <errno.h>
 #include <fcntl.h>
 #include <libevdev-1.0/libevdev/libevdev.h>
