@@ -3,8 +3,10 @@
 This is a project to give a Thinkpad Trackpoint an alternative use: control of a radial menu for system control. 
 
 **Inspirations**
-- [Schneegans/Fly-Pie](https://github.com/Schneegans/Fly-Pie?tab=readme-ov-file)
+- [https://github.com/kando-menu/kando](https://github.com/kando-menu/kando)
+    - I'd love to use this, but it's currently not ideal on Hyprland due to it acting like a normal window, which is quite finicky. Perhaps it's due to Electron, but it behaves like a typical window instead of taking advantage of [wl-roots layers](https://wayland.app/protocols/wlr-layer-shell-unstable-v1) (at least for now). In the future, I would like to split off the middleware into its own application that can be used with Kando; for now, though, I'll be targeting a custom Gtk app for myself.
 - Radial menus in games like Doom Eternal, BeamNG.drive, etc.
+    
 
 ### WIP Feature List
 - Snap select
